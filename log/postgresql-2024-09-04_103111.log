@@ -1,0 +1,14 @@
+2024-09-04 10:31:11.861 -03 [5496] LOG:  sistema de banco de dados foi interrompido; última execução em 2024-09-04 10:18:52 -03
+2024-09-04 10:31:14.151 -03 [5496] LOG:  sistema de banco de dados não foi desligado corretamente; recuperação automática está em andamento
+2024-09-04 10:31:14.160 -03 [5496] LOG:  refazer inicia em 0/15C47F8
+2024-09-04 10:31:14.160 -03 [5496] LOG:  comprimento de registro inválido em 0/15C4830: esperado pelo menos 24, obtido 0
+2024-09-04 10:31:14.160 -03 [5496] LOG:  refazer feito em 0/15C47F8 uso do sistema: CPU: usuário: 0.00 s, sistema: 0.00 s, decorrido: 0.00 s
+2024-09-04 10:31:14.166 -03 [5392] LOG:  ponto de verificação começando:  end-of-recovery immediate wait
+2024-09-04 10:31:14.266 -03 [5392] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.002 s, sincronizados=0.041 s, total=0.104 s; sincronizados files=2, mais longo=0.034 s, média=0.021 s; distância=0 kB, estimado=0 kB; lsn=0/15C4830, refeito lsn=0/15C4830
+2024-09-04 10:37:44.933 -03 [12684] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 10:37:44.933 -03 [12684] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 115: "host    all             all             127.0.0.1/32            md5"
+2024-09-04 10:37:51.298 -03 [10324] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 10:37:51.298 -03 [10324] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 115: "host    all             all             127.0.0.1/32            md5"
+2024-09-04 14:10:23.720 -03 [5392] LOG:  desligando
+2024-09-04 14:10:23.722 -03 [5392] LOG:  ponto de verificação começando:  shutdown immediate
+2024-09-04 14:10:23.731 -03 [5392] LOG:  ponto de verificação concluído: escritos 0 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.001 s, sincronizados=0.001 s, total=0.011 s; sincronizados files=0, mais longo=0.000 s, média=0.000 s; distância=0 kB, estimado=0 kB; lsn=0/15C48E0, refeito lsn=0/15C48E0

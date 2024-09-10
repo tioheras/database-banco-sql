@@ -1,0 +1,11 @@
+2024-09-04 10:18:51.764 -03 [14288] LOG:  iniciando PostgreSQL 16.4, compiled by Visual C++ build 1940, 64-bit
+2024-09-04 10:18:51.765 -03 [14288] LOG:  escutando no endereço IPv6 "::", porta 5432
+2024-09-04 10:18:51.765 -03 [14288] LOG:  escutando no endereço IPv4 "0.0.0.0", porta 5432
+2024-09-04 10:18:51.839 -03 [11076] LOG:  sistema de banco de dados foi interrompido; última execução em 2024-09-04 10:16:25 -03
+2024-09-04 10:18:51.993 -03 [11076] LOG:  sistema de banco de dados não foi desligado corretamente; recuperação automática está em andamento
+2024-09-04 10:18:51.997 -03 [11076] LOG:  refazer inicia em 0/15C4748
+2024-09-04 10:18:51.997 -03 [11076] LOG:  comprimento de registro inválido em 0/15C4780: esperado pelo menos 24, obtido 0
+2024-09-04 10:18:51.997 -03 [11076] LOG:  refazer feito em 0/15C4748 uso do sistema: CPU: usuário: 0.00 s, sistema: 0.00 s, decorrido: 0.00 s
+2024-09-04 10:18:52.002 -03 [3804] LOG:  ponto de verificação começando:  end-of-recovery immediate wait
+2024-09-04 10:18:52.016 -03 [3804] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.003 s, sincronizados=0.004 s, total=0.017 s; sincronizados files=2, mais longo=0.002 s, média=0.002 s; distância=0 kB, estimado=0 kB; lsn=0/15C4780, refeito lsn=0/15C4780
+2024-09-04 10:18:52.033 -03 [14288] LOG:  sistema de banco de dados está pronto para aceitar conexões

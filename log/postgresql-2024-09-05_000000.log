@@ -1,0 +1,4 @@
+2024-09-05 00:56:40.294 -03 [9148] ERRO:  cancelando a instrução devido a pedido do usuário
+2024-09-05 00:56:40.325 -03 [3164] LOG:  desligando
+2024-09-05 00:56:40.328 -03 [3164] LOG:  ponto de verificação começando:  shutdown immediate
+2024-09-05 00:56:40.369 -03 [3164] LOG:  ponto de verificação concluído: escritos 0 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.001 s, sincronizados=0.001 s, total=0.044 s; sincronizados files=0, mais longo=0.000 s, média=0.000 s; distância=0 kB, estimado=3338 kB; lsn=0/1A3ECD0, refeito lsn=0/1A3ECD0

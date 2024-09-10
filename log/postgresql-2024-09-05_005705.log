@@ -1,0 +1,7 @@
+2024-09-05 00:57:05.898 -03 [1540] LOG:  sistema de banco de dados foi desligado em 2024-09-05 00:56:40 -03
+2024-09-05 07:55:42.656 -03 [4324] LOG:  ponto de verificação começando:  time
+2024-09-05 07:55:42.675 -03 [4324] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.003 s, sincronizados=0.004 s, total=0.025 s; sincronizados files=2, mais longo=0.002 s, média=0.002 s; distância=0 kB, estimado=0 kB; lsn=0/1A3EDB8, refeito lsn=0/1A3ED80
+2024-09-05 22:07:52.091 -03 [4952] ERRO:  cancelando a instrução devido a pedido do usuário
+2024-09-05 22:07:52.101 -03 [4324] LOG:  desligando
+2024-09-05 22:07:52.103 -03 [4324] LOG:  ponto de verificação começando:  shutdown immediate
+2024-09-05 22:07:52.111 -03 [4324] LOG:  ponto de verificação concluído: escritos 0 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.001 s, sincronizados=0.001 s, total=0.011 s; sincronizados files=0, mais longo=0.000 s, média=0.000 s; distância=0 kB, estimado=0 kB; lsn=0/1A3EE68, refeito lsn=0/1A3EE68

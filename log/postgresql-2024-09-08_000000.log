@@ -1,0 +1,103 @@
+2024-09-09 09:05:42.292 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:07:28.566 -03 [5728] LOG:  ponto de verificação concluído: escritos 969 buffers (5.9%); 1 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=105.886 s, sincronizados=0.278 s, total=106.274 s; sincronizados files=300, mais longo=0.003 s, média=0.001 s; distância=4578 kB, estimado=4578 kB; lsn=0/1EB7A28, refeito lsn=0/1EB79F0
+2024-09-09 09:10:42.587 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:10:46.937 -03 [5728] LOG:  ponto de verificação concluído: escritos 40 buffers (0.2%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=4.299 s, sincronizados=0.038 s, total=4.351 s; sincronizados files=35, mais longo=0.002 s, média=0.002 s; distância=143 kB, estimado=4135 kB; lsn=0/1EDB9D0, refeito lsn=0/1EDB998
+2024-09-09 09:17:02.613 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a "NO" no caractere 17
+2024-09-09 09:17:02.613 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE IF NO EXISTS agencia (
+		banco_numero INTEGER NOT NULL,
+		numero INTEGER NOT NULL,
+		nome VARCHAR(80) NOT NULL,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (banco_numero,numero),
+		FOREIGN KEY (banco_numero) REFERENCES banco (numero)
+	);
+2024-09-09 09:20:42.950 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:20:47.934 -03 [5728] LOG:  ponto de verificação concluído: escritos 46 buffers (0.3%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=4.936 s, sincronizados=0.038 s, total=4.984 s; sincronizados files=36, mais longo=0.002 s, média=0.002 s; distância=159 kB, estimado=3737 kB; lsn=0/1F03830, refeito lsn=0/1F037F8
+2024-09-09 09:30:42.965 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:30:47.362 -03 [5728] LOG:  ponto de verificação concluído: escritos 40 buffers (0.2%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=4.344 s, sincronizados=0.045 s, total=4.398 s; sincronizados files=33, mais longo=0.007 s, média=0.002 s; distância=145 kB, estimado=3378 kB; lsn=0/1F27E90, refeito lsn=0/1F27E58
+2024-09-09 09:35:29.938 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a "(" no caractere 283
+2024-09-09 09:35:29.938 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE conta_corrente (
+		banco_numero INTEGER NOT NULL,
+		agencia_numero INTEGER NOT NULL,
+		numero BIGINT NOT NULL,
+		digito SMALLINT NOT NULL,
+		cliente_numero BIGINT,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+		PRIMARY KEY (banco_numero,agencia_numero,numero,digito,cliente_numero),
+		FOREIGN KEY (banco_numero,agencia_numero) REFERENCES agencia (banco_numero,numero),
+		FOREIGN KEY (cliente_numero) REFERENCES cliente (numero)
+	);
+2024-09-09 09:37:57.547 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a "(" no caractere 283
+2024-09-09 09:37:57.547 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE conta_corrente (
+		banco_numero INTEGER NOT NULL,
+		agencia_numero INTEGER NOT NULL,
+		numero BIGINT NOT NULL,
+		digito SMALLINT NOT NULL,
+		cliente_numero BIGINT,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+		PRIMARY KEY (banco_numero,agencia_numero,numero,digito,cliente_numero)
+		FOREIGN KEY (banco_numero,agencia_numero) REFERENCES agencia (banco_numero,numero),
+		FOREIGN KEY (cliente_numero) REFERENCES cliente (numero)
+	);
+2024-09-09 09:38:15.950 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a "(" no caractere 283
+2024-09-09 09:38:15.950 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE conta_corrente (
+		banco_numero INTEGER NOT NULL,
+		agencia_numero INTEGER NOT NULL,
+		numero BIGINT NOT NULL,
+		digito SMALLINT NOT NULL,
+		cliente_numero BIGINT,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+		PRIMARY KEY ( banco_numero,agencia_numero,numero,digito,cliente_numero ),
+		FOREIGN KEY (banco_numero,agencia_numero) REFERENCES agencia (banco_numero,numero),
+		FOREIGN KEY (cliente_numero) REFERENCES cliente (numero)
+	);
+2024-09-09 09:38:29.465 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a "(" no caractere 283
+2024-09-09 09:38:29.465 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE conta_corrente (
+		banco_numero INTEGER NOT NULL,
+		agencia_numero INTEGER NOT NULL,
+		numero BIGINT NOT NULL,
+		digito SMALLINT NOT NULL,
+		cliente_numero BIGINT,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+		PRIMARY KEY (banco_numero,agencia_numero,numero,digito,cliente_numero),
+		FOREIGN KEY (banco_numero,agencia_numero) REFERENCES agencia (banco_numero,numero),
+		FOREIGN KEY (cliente_numero) REFERENCES cliente (numero)
+	);
+2024-09-09 09:40:42.376 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:40:46.918 -03 [5728] LOG:  ponto de verificação concluído: escritos 42 buffers (0.3%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=4.489 s, sincronizados=0.042 s, total=4.542 s; sincronizados files=34, mais longo=0.004 s, média=0.002 s; distância=158 kB, estimado=3056 kB; lsn=0/1F4F888, refeito lsn=0/1F4F850
+2024-09-09 09:42:14.975 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a ")" no caractere 186
+2024-09-09 09:42:14.975 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE tipo_transacao (
+		id SMALLSERIAL PRIMARY KEY,
+		nome VARCHAR(50) NOT NULL,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	);
+2024-09-09 09:42:45.191 -03 [9648] ERRO:  erro de sintaxe em ou prÃ³ximo a ")" no caractere 186
+2024-09-09 09:42:45.191 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE tipo_transacao (
+		id SMALLSERIAL PRIMARY KEY,
+		nome VARCHAR(50) NOT NULL,
+		ativo BOOLEAN NOT NULL DEFAULT TRUE,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	);
+2024-09-09 09:45:42.929 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:45:47.236 -03 [5728] LOG:  ponto de verificação concluído: escritos 38 buffers (0.2%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=4.257 s, sincronizados=0.039 s, total=4.307 s; sincronizados files=32, mais longo=0.003 s, média=0.002 s; distância=145 kB, estimado=2765 kB; lsn=0/1F73F58, refeito lsn=0/1F73F20
+2024-09-09 09:53:13.597 -03 [9648] ERRO:  nÃ£o existe a coluna "conta" referenciada na restriÃ§Ã£o de chave estrangeira
+2024-09-09 09:53:13.597 -03 [9648] INSTRUÃ‡Ã‚O:  CREATE TABLE cliente_transacoes (
+		id BIGSERIAL PRIMARY KEY,
+		banco_numero INTEGER NOT NULL,
+		agencia_numero INTEGER NOT NULL,
+		conta_corrente_numero BIGINT NOT NULL,
+		conta_corrente_digito SMALLINT NOT NULL,
+		cliente_numero BIGINT NOT NULL,
+		tipo_transacao_id SMALLINT NOT NULL,
+		valor NUMERIC(15,2) NOT NULL,
+		data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		FOREIGN KEY (banco_numero, agencia_numero, conta, conta_corrente_numero, conta_corrente_digito, cliente_numero) REFERENCES conta_corrente(banco_numero, agencia_numero, numero, digito, cliente_numero)
+	);
+2024-09-09 09:55:42.253 -03 [5728] LOG:  ponto de verificação começando:  time
+2024-09-09 09:55:47.203 -03 [5728] LOG:  ponto de verificação concluído: escritos 45 buffers (0.3%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=4.865 s, sincronizados=0.077 s, total=4.951 s; sincronizados files=41, mais longo=0.015 s, média=0.002 s; distância=164 kB, estimado=2505 kB; lsn=0/1F9D100, refeito lsn=0/1F9D0C8

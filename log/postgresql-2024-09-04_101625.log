@@ -1,0 +1,9 @@
+2024-09-04 10:16:25.726 -03 [12700] LOG:  sistema de banco de dados foi interrompido; última execução em 2024-09-04 10:10:11 -03
+2024-09-04 10:16:25.835 -03 [12700] LOG:  sistema de banco de dados não foi desligado corretamente; recuperação automática está em andamento
+2024-09-04 10:16:25.839 -03 [12700] LOG:  refazer inicia em 0/15C45E8
+2024-09-04 10:16:25.839 -03 [12700] LOG:  comprimento de registro inválido em 0/15C46D0: esperado pelo menos 24, obtido 0
+2024-09-04 10:16:25.839 -03 [12700] LOG:  refazer feito em 0/15C4698 uso do sistema: CPU: usuário: 0.00 s, sistema: 0.00 s, decorrido: 0.00 s
+2024-09-04 10:16:25.845 -03 [15424] LOG:  ponto de verificação começando:  end-of-recovery immediate wait
+2024-09-04 10:16:25.860 -03 [15424] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.003 s, sincronizados=0.003 s, total=0.018 s; sincronizados files=2, mais longo=0.002 s, média=0.002 s; distância=0 kB, estimado=0 kB; lsn=0/15C46D0, refeito lsn=0/15C46D0
+2024-09-04 10:17:34.460 -03 [16008] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 10:17:34.460 -03 [16008] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 115: "host    all             all             127.0.0.1/32            md5"

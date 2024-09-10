@@ -1,0 +1,36 @@
+2024-09-10 12:00:44.386 -03 [5728] LOG:  ponto de verifica��o come�ando:  time
+2024-09-10 12:00:55.707 -03 [5728] LOG:  ponto de verifica��o conclu�do: escritos 103 buffers (0.6%); 0 arquivo(s) do WAL adicionados, 0 removidos, 1 reciclados; escritos=11.259 s, sincronizados=0.043 s, total=11.322 s; sincronizados files=34, mais longo=0.003 s, m�dia=0.002 s; dist�ncia=810 kB, estimado=2335 kB; lsn=0/2067C48, refeito lsn=0/2067C10
+2024-09-10 12:14:12.396 -03 [3980] ERRO:  não existe a coluna "numer" no caractere 8
+2024-09-10 12:14:12.396 -03 [3980] DICA:  Talvez você queira fazer referência à coluna "banco.numero".
+2024-09-10 12:14:12.396 -03 [3980] INSTRUÇÂO:  SELECT numer, nome FROM banco;
+	SELECT banco_numero, numer, nome FROM agencia;
+	SELECT numero, nome, email FROM cliente;
+	SELECT banco_numero, agencia_numero, cliente_numer FROM cliente_transacoes;
+2024-09-10 12:14:24.546 -03 [3980] ERRO:  não existe a coluna "numer" no caractere 54
+2024-09-10 12:14:24.546 -03 [3980] DICA:  Talvez você queira fazer referência à coluna "agencia.numero".
+2024-09-10 12:14:24.546 -03 [3980] INSTRUÇÂO:  SELECT numero, nome FROM banco;
+	SELECT banco_numero, numer, nome FROM agencia;
+	SELECT numero, nome, email FROM cliente;
+	SELECT banco_numero, agencia_numero, cliente_numer FROM cliente_transacoes;
+2024-09-10 12:14:40.313 -03 [3980] ERRO:  não existe a coluna "cliente_numer" no caractere 159
+2024-09-10 12:14:40.313 -03 [3980] DICA:  Talvez você queira fazer referência à coluna "cliente_transacoes.cliente_numero".
+2024-09-10 12:14:40.313 -03 [3980] INSTRUÇÂO:  SELECT numero, nome FROM banco;
+	SELECT banco_numero, numero, nome FROM agencia;
+	SELECT numero, nome, email FROM cliente;
+	SELECT banco_numero, agencia_numero, cliente_numer FROM cliente_transacoes;
+2024-09-10 15:25:53.890 -03 [3980] ERRO:  erro de sintaxe no fim da entrada no caractere 140
+2024-09-10 15:25:53.890 -03 [3980] INSTRUÇÂO:  SELECT numero, nome FROM banco;
+	SELECT banco_numero, numero, nome FROM agencia;
+	
+	WITH tbl_tmp_banco AS (
+		SELECT numero, nome
+		FROM banco
+	)
+2024-09-10 15:26:11.006 -03 [3980] ERRO:  erro de sintaxe em ou próximo a ";" no caractere 140
+2024-09-10 15:26:11.006 -03 [3980] INSTRUÇÂO:  SELECT numero, nome FROM banco;
+	SELECT banco_numero, numero, nome FROM agencia;
+	
+	WITH tbl_tmp_banco AS (
+		SELECT numero, nome
+		FROM banco
+	);

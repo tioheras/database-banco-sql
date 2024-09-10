@@ -1,0 +1,6 @@
+2024-09-04 09:46:56.546 -03 [6600] LOG:  sistema de banco de dados foi desligado em 2024-09-03 16:46:49 -03
+2024-09-04 09:47:03.395 -03 [3408] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 09:47:03.395 -03 [3408] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2024-09-04 09:51:37.595 -03 [8640] LOG:  desligando
+2024-09-04 09:51:37.596 -03 [8640] LOG:  ponto de verificação começando:  shutdown immediate
+2024-09-04 09:51:37.612 -03 [8640] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.002 s, sincronizados=0.005 s, total=0.017 s; sincronizados files=2, mais longo=0.003 s, média=0.003 s; distância=0 kB, estimado=0 kB; lsn=0/15C43A0, refeito lsn=0/15C43A0

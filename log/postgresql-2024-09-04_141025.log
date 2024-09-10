@@ -1,0 +1,23 @@
+2024-09-04 14:10:25.493 -03 [13836] LOG:  sistema de banco de dados foi desligado em 2024-09-04 14:10:23 -03
+2024-09-04 14:15:25.493 -03 [3164] LOG:  ponto de verificação começando:  time
+2024-09-04 14:15:25.555 -03 [3164] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.034 s, sincronizados=0.004 s, total=0.070 s; sincronizados files=2, mais longo=0.003 s, média=0.002 s; distância=0 kB, estimado=0 kB; lsn=0/15C49C8, refeito lsn=0/15C4990
+2024-09-04 14:25:25.569 -03 [3164] LOG:  ponto de verificação começando:  time
+2024-09-04 14:27:12.293 -03 [3164] LOG:  ponto de verificação concluído: escritos 969 buffers (5.9%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=106.449 s, sincronizados=0.265 s, total=106.724 s; sincronizados files=300, mais longo=0.002 s, média=0.001 s; distância=4578 kB, estimado=4578 kB; lsn=0/1A3D388, refeito lsn=0/1A3D350
+2024-09-04 15:00:25.353 -03 [3164] LOG:  ponto de verificação começando:  time
+2024-09-04 15:00:25.803 -03 [3164] LOG:  ponto de verificação concluído: escritos 5 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.436 s, sincronizados=0.007 s, total=0.451 s; sincronizados files=5, mais longo=0.002 s, média=0.002 s; distância=3 kB, estimado=4120 kB; lsn=0/1A3E170, refeito lsn=0/1A3E138
+2024-09-04 15:46:33.237 -03 [9100] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 15:46:33.237 -03 [9100] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 md5"
+2024-09-04 15:51:32.268 -03 [13252] FATAL:  a função de banco de dados (role) "professores" não tem permissão para conectar
+2024-09-04 15:52:14.827 -03 [6096] FATAL:  autenticação do tipo senha falhou para o usuário "Heron"
+2024-09-04 15:52:14.827 -03 [6096] DETALHE:  A função de banco de dados (role) "Heron" não existe.
+	A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 md5"
+2024-09-04 15:52:42.373 -03 [2356] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 15:52:42.373 -03 [2356] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 md5"
+2024-09-04 15:52:48.530 -03 [2928] FATAL:  autenticação do tipo senha falhou para o usuário "postgres"
+2024-09-04 15:52:48.530 -03 [2928] DETALHE:  A conexão correspondeu ao arquivo "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" linha 117: "host    all             all             ::1/128                 md5"
+2024-09-04 15:55:25.880 -03 [3164] LOG:  ponto de verificação começando:  time
+2024-09-04 15:55:26.012 -03 [3164] LOG:  ponto de verificação concluído: escritos 2 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.115 s, sincronizados=0.004 s, total=0.133 s; sincronizados files=2, mais longo=0.003 s, média=0.002 s; distância=2 kB, estimado=3709 kB; lsn=0/1A3EC20, refeito lsn=0/1A3EBE8
+2024-09-04 16:16:12.483 -03 [9552] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-09-04 16:16:12.483 -03 [14060] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-09-04 16:16:12.483 -03 [7232] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054
+2024-09-04 16:16:15.623 -03 [4432] LOG:  nÃ£o foi possÃ­vel receber dados do cliente: unrecognized winsock error 10054

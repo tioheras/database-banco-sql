@@ -1,0 +1,8 @@
+2024-09-04 10:12:53.493 -03 [3296] LOG:  iniciando PostgreSQL 16.4, compiled by Visual C++ build 1940, 64-bit
+2024-09-04 10:12:53.495 -03 [3296] LOG:  não foi possível vincular o endereço IPv6 "::": unrecognized winsock error 10048
+2024-09-04 10:12:53.495 -03 [3296] DICA:  Outro postmaster já está executando na porta 5432? Se não, espere alguns segundos e tente novamente.
+2024-09-04 10:12:53.495 -03 [3296] LOG:  não foi possível vincular o endereço IPv4 "0.0.0.0": unrecognized winsock error 10048
+2024-09-04 10:12:53.495 -03 [3296] DICA:  Outro postmaster já está executando na porta 5432? Se não, espere alguns segundos e tente novamente.
+2024-09-04 10:12:53.495 -03 [3296] ADVERTÊNCIA:  não foi possível criar soquete de escuta para "*"
+2024-09-04 10:12:53.495 -03 [3296] FATAL:  não foi possível criar nenhum soquete TCP/IP
+2024-09-04 10:12:53.496 -03 [3296] LOG:  sistema de banco de dados está desligado

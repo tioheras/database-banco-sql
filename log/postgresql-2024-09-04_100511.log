@@ -1,0 +1,3 @@
+2024-09-04 10:05:11.665 -03 [8348] LOG:  sistema de banco de dados foi desligado em 2024-09-04 10:05:10 -03
+2024-09-04 10:10:11.658 -03 [4016] LOG:  ponto de verificação começando:  time
+2024-09-04 10:10:11.674 -03 [4016] LOG:  ponto de verificação concluído: escritos 3 buffers (0.0%); 0 arquivo(s) do WAL adicionados, 0 removidos, 0 reciclados; escritos=0.003 s, sincronizados=0.004 s, total=0.018 s; sincronizados files=2, mais longo=0.003 s, média=0.002 s; distância=0 kB, estimado=0 kB; lsn=0/15C4620, refeito lsn=0/15C45E8
